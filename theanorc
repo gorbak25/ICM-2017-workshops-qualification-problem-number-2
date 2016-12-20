@@ -1,0 +1,20 @@
+[global]
+floatX = float32
+device = gpu0
+profile_memory = True
+
+[scan]
+allow_gc = True
+allow_output_prealloc = False
+
+[pycuda]
+init = True
+
+[cuda]
+root = /opt/cuda
+
+[lib]
+cnmem = 0.5
+
+[dnn]
+enabled = auto
